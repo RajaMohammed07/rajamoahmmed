@@ -71,7 +71,7 @@ const Contact = () => {
             className="mt-20 pt-12 border-t border-border"
           >
             <p className="text-muted-foreground">
-              © 2024 Your Name. Built with passion and creativity.
+              © 2024 Raja Mohammed. Built with passion and creativity.
             </p>
           </motion.div>
         </motion.div>

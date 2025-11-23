@@ -4,27 +4,27 @@ import { Card } from "@/components/ui/card";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-stack shopping experience with real-time inventory and seamless checkout",
-    tech: ["React", "Node.js", "PostgreSQL"],
+    title: "Business Website",
+    description: "Modern responsive website with smooth animations and mobile-first design",
+    tech: ["HTML", "CSS", "JavaScript"],
     gradient: "from-blue-500/20 to-cyan-500/20",
   },
   {
-    title: "Analytics Dashboard",
-    description: "Real-time data visualization with interactive charts and custom metrics",
-    tech: ["TypeScript", "D3.js", "TailwindCSS"],
+    title: "WordPress Blog",
+    description: "Custom WordPress theme with SEO optimization and fast loading times",
+    tech: ["WordPress", "PHP", "CSS"],
     gradient: "from-purple-500/20 to-pink-500/20",
   },
   {
-    title: "Social Media App",
-    description: "Connect and share with beautiful UI and instant messaging capabilities",
-    tech: ["Next.js", "Firebase", "Framer Motion"],
+    title: "E-Commerce Store",
+    description: "Online shopping platform with Bootstrap framework and responsive layout",
+    tech: ["Bootstrap", "JavaScript", "HTML"],
     gradient: "from-green-500/20 to-emerald-500/20",
   },
   {
-    title: "Portfolio Generator",
-    description: "Create stunning portfolios in minutes with customizable templates",
-    tech: ["React", "Vite", "Supabase"],
+    title: "React Dashboard",
+    description: "Learning project: Interactive dashboard with modern React components",
+    tech: ["React.js", "CSS", "JavaScript"],
     gradient: "from-orange-500/20 to-red-500/20",
   },
 ];

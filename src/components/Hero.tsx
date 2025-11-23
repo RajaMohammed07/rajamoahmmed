@@ -38,7 +38,7 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-primary font-medium mb-4 text-lg tracking-wider uppercase"
           >
-            Creative Developer
+            Web Developer
           </motion.p>
           
           <motion.h1
@@ -47,9 +47,9 @@ const Hero = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="font-display text-6xl md:text-8xl font-bold mb-6 leading-tight"
           >
-            Building Digital
+            Hi, I'm
             <br />
-            <span className="text-gradient">Experiences</span>
+            <span className="text-gradient">Raja Mohammed</span>
           </motion.h1>
 
           <motion.p
@@ -58,7 +58,7 @@ const Hero = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl leading-relaxed"
           >
-            I craft beautiful, performant web applications that push the boundaries of what's possible on the web.
+            I create responsive, user-friendly websites using modern web technologies. Passionate about clean code and beautiful design.
           </motion.p>
 
           <motion.div
