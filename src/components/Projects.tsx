@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const projects = [
@@ -66,22 +66,13 @@ const Projects = () => {
                       <h3 className="font-display text-2xl font-bold group-hover:text-primary transition-colors">
                         {project.title}
                       </h3>
-                      <div className="flex gap-2">
-                        <motion.button
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 0.95 }}
-                          className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors"
-                        >
-                          <Github className="w-5 h-5" />
-                        </motion.button>
-                        <motion.button
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 0.95 }}
-                          className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors"
-                        >
-                          <ExternalLink className="w-5 h-5" />
-                        </motion.button>
-                      </div>
+                      <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors"
+                      >
+                        <ExternalLink className="w-5 h-5" />
+                      </motion.button>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">
                       {project.description}
