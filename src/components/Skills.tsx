@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "React & Next.js", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "Node.js", level: 85 },
-  { name: "UI/UX Design", level: 88 },
-  { name: "PostgreSQL", level: 82 },
-  { name: "AWS & Cloud", level: 78 },
+  { name: "HTML & CSS", level: 90 },
+  { name: "Bootstrap", level: 85 },
+  { name: "JavaScript", level: 82 },
+  { name: "WordPress", level: 88 },
+  { name: "React.js", level: 60 },
+  { name: "Responsive Design", level: 85 },
 ];
 
 const Skills = () => {
@@ -69,10 +69,10 @@ const Skills = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-20 p-8 md:p-12 rounded-2xl bg-gradient-to-br from-card to-secondary border border-primary/20"
         >
-          <h3 className="font-display text-3xl font-bold mb-4">Always Learning</h3>
+          <h3 className="font-display text-3xl font-bold mb-4">Currently Learning</h3>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            Technology evolves rapidly, and I'm committed to staying at the forefront. 
-            Currently exploring AI integration, WebAssembly, and advanced animation techniques.
+            Actively expanding my skills with React.js to build modern, interactive web applications. 
+            Focused on mastering component-based architecture and state management.
           </p>
         </motion.div>
       </div>
