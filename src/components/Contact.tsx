@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Twitter, Github } from "lucide-react";
+import { Mail, Linkedin, Twitter, Github, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const socials = [
@@ -35,13 +35,26 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
             <Button 
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-12 py-8 text-xl rounded-xl shadow-[0_0_40px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_60px_hsl(var(--primary)/0.4)] transition-all mb-16"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-12 py-8 text-xl rounded-xl shadow-[0_0_40px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_60px_hsl(var(--primary)/0.4)] transition-all"
             >
               <Mail className="w-6 h-6 mr-3" />
               Get in Touch
+            </Button>
+            
+            <Button 
+              size="lg"
+              asChild
+              variant="outline"
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-12 py-8 text-xl rounded-xl transition-all"
+            >
+              <a href="/Raja_Mohammed_Resume.pdf" download="Raja_Mohammed_Resume.pdf">
+                <Download className="w-6 h-6 mr-3" />
+                Download Resume
+              </a>
             </Button>
           </motion.div>
 
