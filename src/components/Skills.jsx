@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Code2, Layout, Blocks, Globe, Atom, Smartphone } from "lucide-react";
+import { Code2, Layout, Blocks, Globe, Atom, Box, Zap } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -11,7 +11,8 @@ const skills = [
   { name: "JavaScript", level: 82, icon: Blocks },
   { name: "WordPress", level: 88, icon: Globe },
   { name: "React.js", level: 60, icon: Atom },
-  { name: "Responsive Design", level: 85, icon: Smartphone },
+  { name: "Three.js", level: 70, icon: Box },
+  { name: "GSAP", level: 75, icon: Zap },
 ];
 
 const Skills = () => {
