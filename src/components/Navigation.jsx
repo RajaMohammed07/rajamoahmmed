@@ -43,9 +43,9 @@ const Navigation = () => {
           <a
             href="#hero"
             onClick={(e) => scrollToSection(e, "#hero")}
-            className="text-xl md:text-2xl font-bold text-gradient"
+            className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 border border-primary/50 hover:bg-primary/30 transition-all duration-300"
           >
-            Raja<span className="text-foreground">.</span>
+            <span className="text-lg md:text-xl font-bold text-gradient">RM</span>
           </a>
 
           {/* Desktop Navigation */}
