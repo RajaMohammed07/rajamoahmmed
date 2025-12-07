@@ -1,14 +1,13 @@
 import { useEffect, useRef } from "react";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profileImage from "@/assets/profile.jpg";
 import ThreeBackground from "./ThreeBackground";
+import Profile3D from "./Profile3D";
 import gsap from "gsap";
 
 const Hero = () => {
   const heroRef = useRef(null);
   const textRef = useRef(null);
-  const imageRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -37,11 +36,11 @@ const Hero = () => {
         { opacity: 1, y: 0, duration: 0.8, delay: 0.8 }
       );
 
-      // Profile image animation
+      // Profile 3D animation
       gsap.fromTo(
-        ".hero-image-container",
-        { opacity: 0, scale: 0.8, rotationY: -15 },
-        { opacity: 1, scale: 1, rotationY: 0, duration: 1, delay: 0.5, ease: "power3.out" }
+        ".profile-3d-container",
+        { opacity: 0, scale: 0.8 },
+        { opacity: 1, scale: 1, duration: 1, delay: 0.5, ease: "power3.out" }
       );
 
       // Scroll indicator
@@ -63,16 +62,6 @@ const Hero = () => {
 
     return () => ctx.revert();
   }, []);
-
-  const handleImageHover = (isHovering) => {
-    gsap.to(".hero-image-container", {
-      rotationY: isHovering ? 15 : 0,
-      rotationX: isHovering ? -10 : 0,
-      scale: isHovering ? 1.05 : 1,
-      duration: 0.4,
-      ease: "power2.out",
-    });
-  };
 
   return (
     <section
@@ -117,26 +106,9 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Profile Image with 3D Effect */}
-          <div
-            ref={imageRef}
-            className="relative flex justify-center lg:justify-end"
-          >
-            <div
-              className="hero-image-container relative w-[300px] h-[400px] md:w-[350px] md:h-[450px] lg:w-[400px] lg:h-[500px] opacity-0"
-              style={{ transformStyle: "preserve-3d", perspective: 1000 }}
-              onMouseEnter={() => handleImageHover(true)}
-              onMouseLeave={() => handleImageHover(false)}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-accent/40 rounded-3xl blur-2xl transform translate-y-6" />
-              <img
-                src={profileImage}
-                alt="Raja Mohammed - Web Developer"
-                className="relative w-full h-full object-cover rounded-3xl border-4 border-primary/20 shadow-[0_20px_60px_rgba(0,0,0,0.3)]"
-                style={{ transformStyle: "preserve-3d" }}
-              />
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-            </div>
+          {/* 3D Profile Photo */}
+          <div className="profile-3d-container relative flex justify-center lg:justify-end opacity-0">
+            <Profile3D />
           </div>
         </div>
       </div>
