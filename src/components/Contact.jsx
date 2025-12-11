@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const socials = [
   { icon: Github, label: "GitHub", href: "https://github.com/RajaMohammed07" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/raja-mohammed-251005312" },
   { icon: Mail, label: "Email", href: "mailto:therajamohammed@gmail.com" },
 ];
 
